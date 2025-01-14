@@ -12,8 +12,8 @@ const DestinationCardComponent = (props) => {
     }).format(value) + ',-';
       
   return (
-    <a href="">
-        <div class="w-full lg:max-w-sm bg-white border border-gray-200 rounded-lg shadow mt-5 hover:border-gray-300 text-justify hover:drop-shadow-lg hover:cursor-pointer">
+    <a href={`/destination/${props?.data.id}`}>
+        <div class="w-full h-full bg-white border border-gray-200 rounded-lg shadow mt-5 hover:border-gray-300 text-justify hover:drop-shadow-lg hover:cursor-pointer">
             <img src={props?.data?.images != null? storageLink+props?.data?.images : '/image/defaultDestination.jpeg'} alt="" className='w-full h-52 object-cover rounded-t-lg'/>
             <div className='p-3'>
                 <p className='text-sm text-gray-700'>{props?.data?.destination}</p>

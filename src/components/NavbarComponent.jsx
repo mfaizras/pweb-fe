@@ -62,21 +62,13 @@ const NavbarComponent = () => {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-md leading-snug hover:opacity-75"
-                  href="/about"
+                  href="/destination"
                 >
                   {/* <i className="fab fa-twitter text-lg leading-lg opacity-75"></i> */}
-                  <span className="ml-2">About</span>
+                  <span className="ml-2">Destination</span>
                 </a>
               </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-md leading-snug hover:opacity-75"
-                  href="/data_buku"
-                >
-                  {/* <i className="fab fa-twitter text-lg leading-lg  text-blue-700 opacity-75"></i> */}
-                  <span className="ml-2">Data Buku</span>
-                </a>
-              </li>
+            
             </ul>
           </div>
         </div>

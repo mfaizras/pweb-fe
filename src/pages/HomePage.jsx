@@ -10,7 +10,7 @@ const HomePage = () => {
   const getDestination = (() => {
     axios.get(import.meta.env.VITE_API_URL+'destination')
     .then((response) => {
-      setDestinations(response.data.data)
+      setDestinations(response.data.data.data)
     })
   });
 
@@ -30,7 +30,7 @@ const HomePage = () => {
 
      <section id="features" className="px-12 py-10 text-center">
       <h1 className="text-center text-3xl font-bold">Features</h1>
-      <h2 className="text-xl">We offer various conveniences such as:</h2>
+      <h2 className="text-lg text-gray-500">We offer various conveniences such as:</h2>
       <div className="grid lg:grid-cols-3 gap-3 justify-center">
         <CardComponent icon="fas fa-hotel" header="Best Hotel" description="Stay in a renowned hotel with high level service and facilities" />
         <CardComponent icon="fa-solid fa-umbrella-beach" header="Best Tourguide" description="We bring in renowned tour guides with extensive experience and
@@ -39,10 +39,10 @@ const HomePage = () => {
       </div>
      </section>
 
-     <section id="features" className="px-12 py-10 text-center bg-slate-100">
+     <section id="features" className="px-12 py-10 text-center bg-slate-200">
       <h1 className="text-center text-3xl font-bold">Our Destination</h1>
-      <h2 className="text-xl">We offer various conveniences such as:</h2>
-      <div className="grid lg:grid-cols-3 gap-3 justify-center">
+      <h2 className="text-lg  text-gray-500">We offer various conveniences such as:</h2>
+      <div className="grid lg:grid-cols-4 gap-3 justify-center mb-10">
         {destinations.map((destination) => (
             <DestinationCardComponent data={destination} />
         ))}
