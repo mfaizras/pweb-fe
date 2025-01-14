@@ -49,7 +49,7 @@ const NavbarComponent = () => {
             }
             id="example-navbar-danger"
           >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto justify-center items-center ml-auto">
+            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto justify-center items-center mx-auto">
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-md leading-snug hover:opacity-75"
