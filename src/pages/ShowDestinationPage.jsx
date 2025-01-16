@@ -32,7 +32,8 @@ const ShowDestinationPage = () => {
         <section className='w-full p-10'>
             <h1 className='text-3xl font-bold capitalize'>{destinations.name}</h1>
             <h2 className='text-lg italic capitalize text-gray-600'>{destinations.duration} {destinations.duration_type} Tour | {destinations.destination}</h2>
-            <p>{destinations.description}</p>
+            <div dangerouslySetInnerHTML={{ __html: destinations.description }}>
+            </div>
         </section>
     </Layouts>
   )
