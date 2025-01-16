@@ -45,11 +45,11 @@ const NavbarComponent = () => {
           <div
             className={
               "lg:flex flex-grow items-center" +
-              (navbarOpen ? " flex" : " hidden")
+              (navbarOpen ? " flex " : " hidden")
             }
             id="example-navbar-danger"
           >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto justify-center items-center mx-auto">
+            <ul className="flex flex-col lg:flex-row list-none mx-auto lg:mx-0 lg:ml-auto justify-center items-center">
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-md leading-snug hover:opacity-75"
